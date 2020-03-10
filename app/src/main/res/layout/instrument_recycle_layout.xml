@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simpleTableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+   >
+
+    <!-- first row of the table layout-->
+    <TableRow
+        android:id="@+id/tabRow"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <!-- first element of the row-->
+        <TextView
+            android:id="@+id/tv_instrumentName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="18dip"
+            android:background="@drawable/line"
+            android:text="Text 1dsvgsdvgsd"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_instrumentSymbol"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="18dip"
+            android:text="Text bdsbv2"
+            android:gravity="center"
+            android:background="@drawable/line"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_bid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="18dip"
+            android:text="Text 2fdbfd"
+            android:gravity="center"
+            android:background="@drawable/line"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_ask"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="18dip"
+            android:background="@drawable/line"
+            android:text="Textbfdbfd 2 bdfbfd"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+    </TableRow>
+</TableLayout>
