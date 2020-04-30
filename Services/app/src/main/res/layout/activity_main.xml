@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="Started Services">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/oclick3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onclick3"
+        android:text="Foreground Service"
+        tools:layout_editor_absoluteX="31dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/oclick2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onclick2"
+        android:text="Intent Service"
+        tools:layout_editor_absoluteX="31dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/oclick4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="JobIntentService"
+        android:text="JobIntent Service"
+        tools:layout_editor_absoluteX="31dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/WorkerClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="WorkerClick"
+        android:text="Work Manager"
+        tools:layout_editor_absoluteX="31dp"
+        tools:ignore="OnClick">
+
+    </Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="Bound Services"/>
+
+    <Button
+        android:id="@+id/oclick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="Bind Service"
+        app:layout_constraintBottom_toTopOf="@+id/oclick1"
+        tools:layout_editor_absoluteX="0dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/oclick1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onclick1"
+        android:text="UNBind Service"
+        tools:layout_editor_absoluteX="0dp">
+
+    </Button>
+
+</LinearLayout>
